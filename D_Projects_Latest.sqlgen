@@ -1,0 +1,2109 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<!--
+SQL Data Generator
+RedGate.SQLDataGenerator.UI
+Version:4.5.1.4118-->
+<Project version="2" type="SDGProject">
+  <DataSource version="4" type="LiveDatabaseSource">
+    <ServerName>34.129.143.197; TrustServerCertificate = true</ServerName>
+    <DatabaseName>D_Project2</DatabaseName>
+    <Username>sqlserver</Username>
+    <SavePassword>True</SavePassword>
+    <Password encrypted="1">OzBWpO3zNN4LUkSqoZbe1uOyT4FaLpmj</Password>
+    <ScriptFolderLocation />
+    <MigrationsFolderLocation />
+    <AuthenticationType>SqlPassword</AuthenticationType>
+  </DataSource>
+  <Tables type="List&lt;SDGTable&gt;" version="1">
+    <value version="3" type="SDGTable">
+      <TableType>Generated</TableType>
+      <PopulationDetails version="2" type="PopulationDetails">
+        <PopulationType>RowCount</PopulationType>
+        <RowCount>1000</RowCount>
+        <ProportionTableExists>False</ProportionTableExists>
+        <Proportion>0</Proportion>
+        <TimeToPopulate>0</TimeToPopulate>
+      </PopulationDetails>
+      <InvalidRowBehaviour>SkipRow</InvalidRowBehaviour>
+      <Included>True</Included>
+      <Append>False</Append>
+      <Name>Course</Name>
+      <Schema>dbo</Schema>
+      <IsTemporal>False</IsTemporal>
+      <IdentityInsert>True</IdentityInsert>
+      <Fields type="List&lt;SDGField&gt;" version="1">
+        <value version="1" type="SDGField">
+          <Name>Course_ID</Name>
+          <FieldType>Generated</FieldType>
+          <PrimaryKey>True</PrimaryKey>
+          <ForeignKey>False</ForeignKey>
+          <Unique>True</Unique>
+          <AllowsNulls>False</AllowsNulls>
+          <SqlType>Integer32</SqlType>
+          <Precision>10</Precision>
+          <Scale>0</Scale>
+          <DefinedSize>4</DefinedSize>
+          <Generator version="1" type="GeneratorDetails">
+            <GeneratorTypeName>RedGate.SQLDataGenerator.Generators.Number.Int32Generator</GeneratorTypeName>
+            <DisplayName>IDs</DisplayName>
+            <Description>1,2,3,4,5,6....</Description>
+            <CategoryName>Business</CategoryName>
+            <GeneratorProperties type="Dictionary&lt;string, object&gt;" version="1">
+              <element>
+                <key type="string">Increment</key>
+                <value type="string">1</value>
+              </element>
+              <element>
+                <key type="string">UseSequence</key>
+                <value type="string">False</value>
+              </element>
+              <element>
+                <key type="string">Unique</key>
+                <value type="string">True</value>
+              </element>
+              <element>
+                <key type="string">MinValue</key>
+                <value type="string">6000</value>
+              </element>
+              <element>
+                <key type="string">MaxValue</key>
+                <value type="string">8000</value>
+              </element>
+              <element>
+                <key type="string">UseColumnOffset</key>
+                <value type="string">False</value>
+              </element>
+              <element>
+                <key type="string">NullsAllowed</key>
+                <value type="string">False</value>
+              </element>
+              <element>
+                <key type="string">NullProportion</key>
+                <value type="string">0.01</value>
+              </element>
+              <element>
+                <key type="string">Seed</key>
+                <value type="string">0</value>
+              </element>
+            </GeneratorProperties>
+          </Generator>
+        </value>
+        <value version="1" type="SDGField">
+          <Name>Course_Name</Name>
+          <FieldType>Generated</FieldType>
+          <PrimaryKey>False</PrimaryKey>
+          <ForeignKey>False</ForeignKey>
+          <Unique>False</Unique>
+          <AllowsNulls>False</AllowsNulls>
+          <SqlType>Varchar</SqlType>
+          <Precision>0</Precision>
+          <Scale>0</Scale>
+          <DefinedSize>80</DefinedSize>
+          <Generator version="1" type="GeneratorDetails">
+            <GeneratorTypeName>RedGate.SQLDataGenerator.ExpressionGenerators.Regexp.RegexpGenerator</GeneratorTypeName>
+            <DisplayName>Nick Name</DisplayName>
+            <Description>Mike124, Chris1, Tom78, Jenny39, Amy12, Mel54...</Description>
+            <CategoryName>Personal</CategoryName>
+            <GeneratorProperties type="Dictionary&lt;string, object&gt;" version="1">
+              <element>
+                <key type="string">Expression</key>
+                <value type="string">($"courses.txt")</value>
+              </element>
+              <element>
+                <key type="string">UseSequence</key>
+                <value type="string">False</value>
+              </element>
+              <element>
+                <key type="string">NullsAllowed</key>
+                <value type="string">False</value>
+              </element>
+              <element>
+                <key type="string">NullProportion</key>
+                <value type="string">0.01</value>
+              </element>
+              <element>
+                <key type="string">Seed</key>
+                <value type="string">1</value>
+              </element>
+              <element>
+                <key type="string">Unique</key>
+                <value type="string">False</value>
+              </element>
+            </GeneratorProperties>
+          </Generator>
+        </value>
+      </Fields>
+      <ForeignKeyProperties type="List&lt;ForeignKeyProperty&gt;" version="1" />
+    </value>
+    <value version="3" type="SDGTable">
+      <TableType>Generated</TableType>
+      <PopulationDetails version="2" type="PopulationDetails">
+        <PopulationType>RowCount</PopulationType>
+        <RowCount>1000</RowCount>
+        <ProportionTableExists>False</ProportionTableExists>
+        <Proportion>0</Proportion>
+        <TimeToPopulate>0</TimeToPopulate>
+      </PopulationDetails>
+      <InvalidRowBehaviour>SkipRow</InvalidRowBehaviour>
+      <Included>True</Included>
+      <Append>False</Append>
+      <Name>Enrolment</Name>
+      <Schema>dbo</Schema>
+      <IsTemporal>False</IsTemporal>
+      <IdentityInsert>True</IdentityInsert>
+      <Fields type="List&lt;SDGField&gt;" version="1">
+        <value version="1" type="SDGField">
+          <Name>Enrolment_ID</Name>
+          <FieldType>Generated</FieldType>
+          <PrimaryKey>True</PrimaryKey>
+          <ForeignKey>False</ForeignKey>
+          <Unique>True</Unique>
+          <AllowsNulls>False</AllowsNulls>
+          <SqlType>Integer32</SqlType>
+          <Precision>10</Precision>
+          <Scale>0</Scale>
+          <DefinedSize>4</DefinedSize>
+          <Generator version="1" type="GeneratorDetails">
+            <GeneratorTypeName>RedGate.SQLDataGenerator.Generators.Number.Int32Generator</GeneratorTypeName>
+            <DisplayName>IDs</DisplayName>
+            <Description>1,2,3,4,5,6....</Description>
+            <CategoryName>Business</CategoryName>
+            <GeneratorProperties type="Dictionary&lt;string, object&gt;" version="1">
+              <element>
+                <key type="string">Increment</key>
+                <value type="string">1</value>
+              </element>
+              <element>
+                <key type="string">UseSequence</key>
+                <value type="string">False</value>
+              </element>
+              <element>
+                <key type="string">Unique</key>
+                <value type="string">True</value>
+              </element>
+              <element>
+                <key type="string">MinValue</key>
+                <value type="string">1500</value>
+              </element>
+              <element>
+                <key type="string">MaxValue</key>
+                <value type="string">2500</value>
+              </element>
+              <element>
+                <key type="string">UseColumnOffset</key>
+                <value type="string">False</value>
+              </element>
+              <element>
+                <key type="string">NullsAllowed</key>
+                <value type="string">False</value>
+              </element>
+              <element>
+                <key type="string">NullProportion</key>
+                <value type="string">0.01</value>
+              </element>
+              <element>
+                <key type="string">Seed</key>
+                <value type="string">1024</value>
+              </element>
+            </GeneratorProperties>
+          </Generator>
+        </value>
+        <value version="1" type="SDGField">
+          <Name>student_ID</Name>
+          <FieldType>Generated</FieldType>
+          <PrimaryKey>False</PrimaryKey>
+          <ForeignKey>True</ForeignKey>
+          <Unique>False</Unique>
+          <AllowsNulls>False</AllowsNulls>
+          <SqlType>Integer32</SqlType>
+          <Precision>10</Precision>
+          <Scale>0</Scale>
+          <DefinedSize>4</DefinedSize>
+          <Generator version="1" type="GeneratorDetails">
+            <GeneratorTypeName>RedGate.SQLDataGenerator.Generators.Others.FKInternalGenerator</GeneratorTypeName>
+            <DisplayName>Foreign Key (automatic)</DisplayName>
+            <Description>Reference Foreign Key $FK for column $FKField</Description>
+            <CategoryName>SQL Type</CategoryName>
+            <GeneratorProperties type="Dictionary&lt;string, object&gt;" version="1">
+              <element>
+                <key type="string">Unique</key>
+                <value type="string">False</value>
+              </element>
+            </GeneratorProperties>
+          </Generator>
+        </value>
+        <value version="1" type="SDGField">
+          <Name>Enrolment_year</Name>
+          <FieldType>Generated</FieldType>
+          <PrimaryKey>False</PrimaryKey>
+          <ForeignKey>False</ForeignKey>
+          <Unique>False</Unique>
+          <AllowsNulls>False</AllowsNulls>
+          <SqlType>Integer32</SqlType>
+          <Precision>10</Precision>
+          <Scale>0</Scale>
+          <DefinedSize>4</DefinedSize>
+          <Generator version="1" type="GeneratorDetails">
+            <GeneratorTypeName>RedGate.SQLDataGenerator.Generators.Number.Int32Generator</GeneratorTypeName>
+            <DisplayName>int</DisplayName>
+            <Description>Generates int (32-bit) values</Description>
+            <CategoryName>SQL Type</CategoryName>
+            <GeneratorProperties type="Dictionary&lt;string, object&gt;" version="1">
+              <element>
+                <key type="string">Increment</key>
+                <value type="string">1</value>
+              </element>
+              <element>
+                <key type="string">UseSequence</key>
+                <value type="string">False</value>
+              </element>
+              <element>
+                <key type="string">Unique</key>
+                <value type="string">False</value>
+              </element>
+              <element>
+                <key type="string">MinValue</key>
+                <value type="string">2006</value>
+              </element>
+              <element>
+                <key type="string">MaxValue</key>
+                <value type="string">2012</value>
+              </element>
+              <element>
+                <key type="string">UseColumnOffset</key>
+                <value type="string">False</value>
+              </element>
+              <element>
+                <key type="string">NullsAllowed</key>
+                <value type="string">False</value>
+              </element>
+              <element>
+                <key type="string">NullProportion</key>
+                <value type="string">0.01</value>
+              </element>
+              <element>
+                <key type="string">Seed</key>
+                <value type="string">1026</value>
+              </element>
+            </GeneratorProperties>
+          </Generator>
+        </value>
+        <value version="1" type="SDGField">
+          <Name>Finish_year</Name>
+          <FieldType>Generated</FieldType>
+          <PrimaryKey>False</PrimaryKey>
+          <ForeignKey>False</ForeignKey>
+          <Unique>False</Unique>
+          <AllowsNulls>False</AllowsNulls>
+          <SqlType>Integer32</SqlType>
+          <Precision>10</Precision>
+          <Scale>0</Scale>
+          <DefinedSize>4</DefinedSize>
+          <Generator version="1" type="GeneratorDetails">
+            <GeneratorTypeName>RedGate.SQLDataGenerator.Generators.Number.Int32Generator</GeneratorTypeName>
+            <DisplayName>int</DisplayName>
+            <Description>Generates int (32-bit) values</Description>
+            <CategoryName>SQL Type</CategoryName>
+            <GeneratorProperties type="Dictionary&lt;string, object&gt;" version="1">
+              <element>
+                <key type="string">Increment</key>
+                <value type="string">1</value>
+              </element>
+              <element>
+                <key type="string">UseSequence</key>
+                <value type="string">False</value>
+              </element>
+              <element>
+                <key type="string">Unique</key>
+                <value type="string">False</value>
+              </element>
+              <element>
+                <key type="string">MinValue</key>
+                <value type="string">2013</value>
+              </element>
+              <element>
+                <key type="string">MaxValue</key>
+                <value type="string">2015</value>
+              </element>
+              <element>
+                <key type="string">UseColumnOffset</key>
+                <value type="string">False</value>
+              </element>
+              <element>
+                <key type="string">NullsAllowed</key>
+                <value type="string">False</value>
+              </element>
+              <element>
+                <key type="string">NullProportion</key>
+                <value type="string">0.01</value>
+              </element>
+              <element>
+                <key type="string">Seed</key>
+                <value type="string">1027</value>
+              </element>
+            </GeneratorProperties>
+          </Generator>
+        </value>
+        <value version="1" type="SDGField">
+          <Name>Course_ID</Name>
+          <FieldType>Generated</FieldType>
+          <PrimaryKey>False</PrimaryKey>
+          <ForeignKey>True</ForeignKey>
+          <Unique>False</Unique>
+          <AllowsNulls>False</AllowsNulls>
+          <SqlType>Integer32</SqlType>
+          <Precision>10</Precision>
+          <Scale>0</Scale>
+          <DefinedSize>4</DefinedSize>
+          <Generator version="1" type="GeneratorDetails">
+            <GeneratorTypeName>RedGate.SQLDataGenerator.Generators.Others.FKInternalGenerator</GeneratorTypeName>
+            <DisplayName>Foreign Key (automatic)</DisplayName>
+            <Description>Reference Foreign Key $FK for column $FKField</Description>
+            <CategoryName>SQL Type</CategoryName>
+            <GeneratorProperties type="Dictionary&lt;string, object&gt;" version="1">
+              <element>
+                <key type="string">Unique</key>
+                <value type="string">False</value>
+              </element>
+            </GeneratorProperties>
+          </Generator>
+        </value>
+      </Fields>
+      <ForeignKeyProperties type="List&lt;ForeignKeyProperty&gt;" version="1">
+        <value version="2" type="ForeignKeyProperty">
+          <Fields type="List&lt;string&gt;" version="1">
+            <value type="string">student_ID</value>
+          </Fields>
+          <ForeignKeyFillMethod>RepeatForever</ForeignKeyFillMethod>
+          <MaxBuckets>1000</MaxBuckets>
+          <Seed>0</Seed>
+          <MinRepeats>1</MinRepeats>
+          <MaxRepeats>10</MaxRepeats>
+          <NullsAllowed>False</NullsAllowed>
+          <NullProportion>0.01</NullProportion>
+        </value>
+        <value version="2" type="ForeignKeyProperty">
+          <Fields type="List&lt;string&gt;" version="1">
+            <value type="string">Course_ID</value>
+          </Fields>
+          <ForeignKeyFillMethod>RepeatForever</ForeignKeyFillMethod>
+          <MaxBuckets>1000</MaxBuckets>
+          <Seed>0</Seed>
+          <MinRepeats>1</MinRepeats>
+          <MaxRepeats>10</MaxRepeats>
+          <NullsAllowed>False</NullsAllowed>
+          <NullProportion>0.01</NullProportion>
+        </value>
+      </ForeignKeyProperties>
+    </value>
+    <value version="3" type="SDGTable">
+      <TableType>Generated</TableType>
+      <PopulationDetails version="2" type="PopulationDetails">
+        <PopulationType>RowCount</PopulationType>
+        <RowCount>1000</RowCount>
+        <ProportionTableExists>False</ProportionTableExists>
+        <Proportion>0</Proportion>
+        <TimeToPopulate>0</TimeToPopulate>
+      </PopulationDetails>
+      <InvalidRowBehaviour>SkipRow</InvalidRowBehaviour>
+      <Included>True</Included>
+      <Append>False</Append>
+      <Name>Enrolment_Subject</Name>
+      <Schema>dbo</Schema>
+      <IsTemporal>False</IsTemporal>
+      <IdentityInsert>True</IdentityInsert>
+      <Fields type="List&lt;SDGField&gt;" version="1">
+        <value version="1" type="SDGField">
+          <Name>Enrolment_ID</Name>
+          <FieldType>Generated</FieldType>
+          <PrimaryKey>True</PrimaryKey>
+          <ForeignKey>True</ForeignKey>
+          <Unique>True</Unique>
+          <AllowsNulls>False</AllowsNulls>
+          <SqlType>Integer32</SqlType>
+          <Precision>10</Precision>
+          <Scale>0</Scale>
+          <DefinedSize>4</DefinedSize>
+          <Generator version="1" type="GeneratorDetails">
+            <GeneratorTypeName>RedGate.SQLDataGenerator.Generators.Others.FKInternalGenerator</GeneratorTypeName>
+            <DisplayName>Foreign Key (automatic)</DisplayName>
+            <Description>Reference Foreign Key $FK for column $FKField</Description>
+            <CategoryName>SQL Type</CategoryName>
+            <GeneratorProperties type="Dictionary&lt;string, object&gt;" version="1">
+              <element>
+                <key type="string">Unique</key>
+                <value type="string">True</value>
+              </element>
+            </GeneratorProperties>
+          </Generator>
+        </value>
+        <value version="1" type="SDGField">
+          <Name>Subject_ID</Name>
+          <FieldType>Generated</FieldType>
+          <PrimaryKey>True</PrimaryKey>
+          <ForeignKey>True</ForeignKey>
+          <Unique>True</Unique>
+          <AllowsNulls>False</AllowsNulls>
+          <SqlType>Integer32</SqlType>
+          <Precision>10</Precision>
+          <Scale>0</Scale>
+          <DefinedSize>4</DefinedSize>
+          <Generator version="1" type="GeneratorDetails">
+            <GeneratorTypeName>RedGate.SQLDataGenerator.Generators.Others.FKInternalGenerator</GeneratorTypeName>
+            <DisplayName>Foreign Key (automatic)</DisplayName>
+            <Description>Reference Foreign Key $FK for column $FKField</Description>
+            <CategoryName>SQL Type</CategoryName>
+            <GeneratorProperties type="Dictionary&lt;string, object&gt;" version="1">
+              <element>
+                <key type="string">Unique</key>
+                <value type="string">True</value>
+              </element>
+            </GeneratorProperties>
+          </Generator>
+        </value>
+      </Fields>
+      <ForeignKeyProperties type="List&lt;ForeignKeyProperty&gt;" version="1">
+        <value version="2" type="ForeignKeyProperty">
+          <Fields type="List&lt;string&gt;" version="1">
+            <value type="string">Subject_ID</value>
+          </Fields>
+          <ForeignKeyFillMethod>Unique</ForeignKeyFillMethod>
+          <MaxBuckets>1000</MaxBuckets>
+          <Seed>0</Seed>
+          <MinRepeats>1</MinRepeats>
+          <MaxRepeats>10</MaxRepeats>
+          <NullsAllowed>False</NullsAllowed>
+          <NullProportion>0.01</NullProportion>
+        </value>
+        <value version="2" type="ForeignKeyProperty">
+          <Fields type="List&lt;string&gt;" version="1">
+            <value type="string">Enrolment_ID</value>
+          </Fields>
+          <ForeignKeyFillMethod>Unique</ForeignKeyFillMethod>
+          <MaxBuckets>1000</MaxBuckets>
+          <Seed>0</Seed>
+          <MinRepeats>1</MinRepeats>
+          <MaxRepeats>10</MaxRepeats>
+          <NullsAllowed>False</NullsAllowed>
+          <NullProportion>0.01</NullProportion>
+        </value>
+      </ForeignKeyProperties>
+    </value>
+    <value version="3" type="SDGTable">
+      <TableType>Generated</TableType>
+      <PopulationDetails version="2" type="PopulationDetails">
+        <PopulationType>RowCount</PopulationType>
+        <RowCount>1000</RowCount>
+        <ProportionTableExists>False</ProportionTableExists>
+        <Proportion>0</Proportion>
+        <TimeToPopulate>0</TimeToPopulate>
+      </PopulationDetails>
+      <InvalidRowBehaviour>SkipRow</InvalidRowBehaviour>
+      <Included>True</Included>
+      <Append>False</Append>
+      <Name>Exam</Name>
+      <Schema>dbo</Schema>
+      <IsTemporal>False</IsTemporal>
+      <IdentityInsert>True</IdentityInsert>
+      <Fields type="List&lt;SDGField&gt;" version="1">
+        <value version="1" type="SDGField">
+          <Name>Exam_ID</Name>
+          <FieldType>Generated</FieldType>
+          <PrimaryKey>True</PrimaryKey>
+          <ForeignKey>False</ForeignKey>
+          <Unique>True</Unique>
+          <AllowsNulls>False</AllowsNulls>
+          <SqlType>Integer32</SqlType>
+          <Precision>10</Precision>
+          <Scale>0</Scale>
+          <DefinedSize>4</DefinedSize>
+          <Generator version="1" type="GeneratorDetails">
+            <GeneratorTypeName>RedGate.SQLDataGenerator.Generators.Number.Int32Generator</GeneratorTypeName>
+            <DisplayName>IDs</DisplayName>
+            <Description>1,2,3,4,5,6....</Description>
+            <CategoryName>Business</CategoryName>
+            <GeneratorProperties type="Dictionary&lt;string, object&gt;" version="1">
+              <element>
+                <key type="string">Increment</key>
+                <value type="string">1</value>
+              </element>
+              <element>
+                <key type="string">UseSequence</key>
+                <value type="string">True</value>
+              </element>
+              <element>
+                <key type="string">Unique</key>
+                <value type="string">True</value>
+              </element>
+              <element>
+                <key type="string">MinValue</key>
+                <value type="string">1</value>
+              </element>
+              <element>
+                <key type="string">MaxValue</key>
+                <value type="string">2147483647</value>
+              </element>
+              <element>
+                <key type="string">UseColumnOffset</key>
+                <value type="string">False</value>
+              </element>
+              <element>
+                <key type="string">NullsAllowed</key>
+                <value type="string">False</value>
+              </element>
+              <element>
+                <key type="string">NullProportion</key>
+                <value type="string">0.01</value>
+              </element>
+              <element>
+                <key type="string">Seed</key>
+                <value type="string">3072</value>
+              </element>
+            </GeneratorProperties>
+          </Generator>
+        </value>
+        <value version="1" type="SDGField">
+          <Name>Exam_Name</Name>
+          <FieldType>Generated</FieldType>
+          <PrimaryKey>False</PrimaryKey>
+          <ForeignKey>False</ForeignKey>
+          <Unique>False</Unique>
+          <AllowsNulls>False</AllowsNulls>
+          <SqlType>Varchar</SqlType>
+          <Precision>0</Precision>
+          <Scale>0</Scale>
+          <DefinedSize>90</DefinedSize>
+          <Generator version="1" type="GeneratorDetails">
+            <GeneratorTypeName>RedGate.SQLDataGenerator.ExpressionGenerators.Regexp.RegexpGenerator</GeneratorTypeName>
+            <DisplayName>Nick Name</DisplayName>
+            <Description>Mike124, Chris1, Tom78, Jenny39, Amy12, Mel54...</Description>
+            <CategoryName>Personal</CategoryName>
+            <GeneratorProperties type="Dictionary&lt;string, object&gt;" version="1">
+              <element>
+                <key type="string">Expression</key>
+                <value type="string">($"ExamList.txt")</value>
+              </element>
+              <element>
+                <key type="string">UseSequence</key>
+                <value type="string">False</value>
+              </element>
+              <element>
+                <key type="string">NullsAllowed</key>
+                <value type="string">False</value>
+              </element>
+              <element>
+                <key type="string">NullProportion</key>
+                <value type="string">0.01</value>
+              </element>
+              <element>
+                <key type="string">Seed</key>
+                <value type="string">3073</value>
+              </element>
+              <element>
+                <key type="string">Unique</key>
+                <value type="string">False</value>
+              </element>
+            </GeneratorProperties>
+          </Generator>
+        </value>
+        <value version="1" type="SDGField">
+          <Name>Exam_requirement</Name>
+          <FieldType>Generated</FieldType>
+          <PrimaryKey>False</PrimaryKey>
+          <ForeignKey>False</ForeignKey>
+          <Unique>False</Unique>
+          <AllowsNulls>False</AllowsNulls>
+          <SqlType>Integer32</SqlType>
+          <Precision>10</Precision>
+          <Scale>0</Scale>
+          <DefinedSize>4</DefinedSize>
+          <Generator version="1" type="GeneratorDetails">
+            <GeneratorTypeName>RedGate.SQLDataGenerator.Generators.Number.Int32Generator</GeneratorTypeName>
+            <DisplayName>int</DisplayName>
+            <Description>Generates int (32-bit) values</Description>
+            <CategoryName>SQL Type</CategoryName>
+            <GeneratorProperties type="Dictionary&lt;string, object&gt;" version="1">
+              <element>
+                <key type="string">Increment</key>
+                <value type="string">10</value>
+              </element>
+              <element>
+                <key type="string">UseSequence</key>
+                <value type="string">True</value>
+              </element>
+              <element>
+                <key type="string">Unique</key>
+                <value type="string">False</value>
+              </element>
+              <element>
+                <key type="string">MinValue</key>
+                <value type="string">60</value>
+              </element>
+              <element>
+                <key type="string">MaxValue</key>
+                <value type="string">90</value>
+              </element>
+              <element>
+                <key type="string">UseColumnOffset</key>
+                <value type="string">False</value>
+              </element>
+              <element>
+                <key type="string">NullsAllowed</key>
+                <value type="string">False</value>
+              </element>
+              <element>
+                <key type="string">NullProportion</key>
+                <value type="string">0.01</value>
+              </element>
+              <element>
+                <key type="string">Seed</key>
+                <value type="string">3074</value>
+              </element>
+            </GeneratorProperties>
+          </Generator>
+        </value>
+        <value version="1" type="SDGField">
+          <Name>Grade</Name>
+          <FieldType>Generated</FieldType>
+          <PrimaryKey>False</PrimaryKey>
+          <ForeignKey>False</ForeignKey>
+          <Unique>False</Unique>
+          <AllowsNulls>False</AllowsNulls>
+          <SqlType>Varchar</SqlType>
+          <Precision>0</Precision>
+          <Scale>0</Scale>
+          <DefinedSize>50</DefinedSize>
+          <Generator version="1" type="GeneratorDetails">
+            <GeneratorTypeName>RedGate.SQLDataGenerator.ExpressionGenerators.Regexp.RegexpGenerator</GeneratorTypeName>
+            <DisplayName>Regex Generator</DisplayName>
+            <Description>Generates data from a Regular Expression</Description>
+            <CategoryName>Generic</CategoryName>
+            <GeneratorProperties type="Dictionary&lt;string, object&gt;" version="1">
+              <element>
+                <key type="string">Expression</key>
+                <value type="string">($"Grades.txt")</value>
+              </element>
+              <element>
+                <key type="string">UseSequence</key>
+                <value type="string">False</value>
+              </element>
+              <element>
+                <key type="string">NullsAllowed</key>
+                <value type="string">False</value>
+              </element>
+              <element>
+                <key type="string">NullProportion</key>
+                <value type="string">0.01</value>
+              </element>
+              <element>
+                <key type="string">Seed</key>
+                <value type="string">3075</value>
+              </element>
+              <element>
+                <key type="string">Unique</key>
+                <value type="string">False</value>
+              </element>
+            </GeneratorProperties>
+          </Generator>
+        </value>
+        <value version="1" type="SDGField">
+          <Name>Subject_ID</Name>
+          <FieldType>Generated</FieldType>
+          <PrimaryKey>False</PrimaryKey>
+          <ForeignKey>True</ForeignKey>
+          <Unique>False</Unique>
+          <AllowsNulls>False</AllowsNulls>
+          <SqlType>Integer32</SqlType>
+          <Precision>10</Precision>
+          <Scale>0</Scale>
+          <DefinedSize>4</DefinedSize>
+          <Generator version="1" type="GeneratorDetails">
+            <GeneratorTypeName>RedGate.SQLDataGenerator.Generators.Others.FKInternalGenerator</GeneratorTypeName>
+            <DisplayName>Foreign Key (automatic)</DisplayName>
+            <Description>Reference Foreign Key $FK for column $FKField</Description>
+            <CategoryName>SQL Type</CategoryName>
+            <GeneratorProperties type="Dictionary&lt;string, object&gt;" version="1">
+              <element>
+                <key type="string">Unique</key>
+                <value type="string">False</value>
+              </element>
+            </GeneratorProperties>
+          </Generator>
+        </value>
+      </Fields>
+      <ForeignKeyProperties type="List&lt;ForeignKeyProperty&gt;" version="1">
+        <value version="2" type="ForeignKeyProperty">
+          <Fields type="List&lt;string&gt;" version="1">
+            <value type="string">Subject_ID</value>
+          </Fields>
+          <ForeignKeyFillMethod>RepeatForever</ForeignKeyFillMethod>
+          <MaxBuckets>1000</MaxBuckets>
+          <Seed>0</Seed>
+          <MinRepeats>1</MinRepeats>
+          <MaxRepeats>10</MaxRepeats>
+          <NullsAllowed>False</NullsAllowed>
+          <NullProportion>0.01</NullProportion>
+        </value>
+      </ForeignKeyProperties>
+    </value>
+    <value version="3" type="SDGTable">
+      <TableType>Generated</TableType>
+      <PopulationDetails version="2" type="PopulationDetails">
+        <PopulationType>RowCount</PopulationType>
+        <RowCount>1000</RowCount>
+        <ProportionTableExists>False</ProportionTableExists>
+        <Proportion>0</Proportion>
+        <TimeToPopulate>0</TimeToPopulate>
+      </PopulationDetails>
+      <InvalidRowBehaviour>SkipRow</InvalidRowBehaviour>
+      <Included>True</Included>
+      <Append>False</Append>
+      <Name>Grade</Name>
+      <Schema>dbo</Schema>
+      <IsTemporal>False</IsTemporal>
+      <IdentityInsert>True</IdentityInsert>
+      <Fields type="List&lt;SDGField&gt;" version="1">
+        <value version="1" type="SDGField">
+          <Name>student_ID</Name>
+          <FieldType>Generated</FieldType>
+          <PrimaryKey>True</PrimaryKey>
+          <ForeignKey>True</ForeignKey>
+          <Unique>True</Unique>
+          <AllowsNulls>False</AllowsNulls>
+          <SqlType>Integer32</SqlType>
+          <Precision>10</Precision>
+          <Scale>0</Scale>
+          <DefinedSize>4</DefinedSize>
+          <Generator version="1" type="GeneratorDetails">
+            <GeneratorTypeName>RedGate.SQLDataGenerator.Generators.Others.FKInternalGenerator</GeneratorTypeName>
+            <DisplayName>Foreign Key (automatic)</DisplayName>
+            <Description>Reference Foreign Key $FK for column $FKField</Description>
+            <CategoryName>SQL Type</CategoryName>
+            <GeneratorProperties type="Dictionary&lt;string, object&gt;" version="1">
+              <element>
+                <key type="string">Unique</key>
+                <value type="string">True</value>
+              </element>
+            </GeneratorProperties>
+          </Generator>
+        </value>
+        <value version="1" type="SDGField">
+          <Name>Exam_ID</Name>
+          <FieldType>Generated</FieldType>
+          <PrimaryKey>True</PrimaryKey>
+          <ForeignKey>True</ForeignKey>
+          <Unique>True</Unique>
+          <AllowsNulls>False</AllowsNulls>
+          <SqlType>Integer32</SqlType>
+          <Precision>10</Precision>
+          <Scale>0</Scale>
+          <DefinedSize>4</DefinedSize>
+          <Generator version="1" type="GeneratorDetails">
+            <GeneratorTypeName>RedGate.SQLDataGenerator.Generators.Others.FKInternalGenerator</GeneratorTypeName>
+            <DisplayName>Foreign Key (automatic)</DisplayName>
+            <Description>Reference Foreign Key $FK for column $FKField</Description>
+            <CategoryName>SQL Type</CategoryName>
+            <GeneratorProperties type="Dictionary&lt;string, object&gt;" version="1">
+              <element>
+                <key type="string">Unique</key>
+                <value type="string">True</value>
+              </element>
+            </GeneratorProperties>
+          </Generator>
+        </value>
+        <value version="1" type="SDGField">
+          <Name>Num_Attempts</Name>
+          <FieldType>Generated</FieldType>
+          <PrimaryKey>False</PrimaryKey>
+          <ForeignKey>False</ForeignKey>
+          <Unique>False</Unique>
+          <AllowsNulls>False</AllowsNulls>
+          <SqlType>Integer32</SqlType>
+          <Precision>10</Precision>
+          <Scale>0</Scale>
+          <DefinedSize>4</DefinedSize>
+          <Generator version="1" type="GeneratorDetails">
+            <GeneratorTypeName>RedGate.SQLDataGenerator.Generators.Number.Int32Generator</GeneratorTypeName>
+            <DisplayName>int</DisplayName>
+            <Description>Generates int (32-bit) values</Description>
+            <CategoryName>SQL Type</CategoryName>
+            <GeneratorProperties type="Dictionary&lt;string, object&gt;" version="1">
+              <element>
+                <key type="string">Increment</key>
+                <value type="string">1</value>
+              </element>
+              <element>
+                <key type="string">UseSequence</key>
+                <value type="string">False</value>
+              </element>
+              <element>
+                <key type="string">Unique</key>
+                <value type="string">False</value>
+              </element>
+              <element>
+                <key type="string">MinValue</key>
+                <value type="string">1</value>
+              </element>
+              <element>
+                <key type="string">MaxValue</key>
+                <value type="string">3</value>
+              </element>
+              <element>
+                <key type="string">UseColumnOffset</key>
+                <value type="string">False</value>
+              </element>
+              <element>
+                <key type="string">NullsAllowed</key>
+                <value type="string">False</value>
+              </element>
+              <element>
+                <key type="string">NullProportion</key>
+                <value type="string">0.01</value>
+              </element>
+              <element>
+                <key type="string">Seed</key>
+                <value type="string">4098</value>
+              </element>
+            </GeneratorProperties>
+          </Generator>
+        </value>
+        <value version="1" type="SDGField">
+          <Name>Score</Name>
+          <FieldType>Generated</FieldType>
+          <PrimaryKey>False</PrimaryKey>
+          <ForeignKey>False</ForeignKey>
+          <Unique>False</Unique>
+          <AllowsNulls>False</AllowsNulls>
+          <SqlType>Integer32</SqlType>
+          <Precision>10</Precision>
+          <Scale>0</Scale>
+          <DefinedSize>4</DefinedSize>
+          <Generator version="1" type="GeneratorDetails">
+            <GeneratorTypeName>RedGate.SQLDataGenerator.Generators.Number.Int32Generator</GeneratorTypeName>
+            <DisplayName>int</DisplayName>
+            <Description>Generates int (32-bit) values</Description>
+            <CategoryName>SQL Type</CategoryName>
+            <GeneratorProperties type="Dictionary&lt;string, object&gt;" version="1">
+              <element>
+                <key type="string">Increment</key>
+                <value type="string">1</value>
+              </element>
+              <element>
+                <key type="string">UseSequence</key>
+                <value type="string">False</value>
+              </element>
+              <element>
+                <key type="string">Unique</key>
+                <value type="string">False</value>
+              </element>
+              <element>
+                <key type="string">MinValue</key>
+                <value type="string">10</value>
+              </element>
+              <element>
+                <key type="string">MaxValue</key>
+                <value type="string">100</value>
+              </element>
+              <element>
+                <key type="string">UseColumnOffset</key>
+                <value type="string">False</value>
+              </element>
+              <element>
+                <key type="string">NullsAllowed</key>
+                <value type="string">False</value>
+              </element>
+              <element>
+                <key type="string">NullProportion</key>
+                <value type="string">0.01</value>
+              </element>
+              <element>
+                <key type="string">Seed</key>
+                <value type="string">4099</value>
+              </element>
+            </GeneratorProperties>
+          </Generator>
+        </value>
+      </Fields>
+      <ForeignKeyProperties type="List&lt;ForeignKeyProperty&gt;" version="1">
+        <value version="2" type="ForeignKeyProperty">
+          <Fields type="List&lt;string&gt;" version="1">
+            <value type="string">student_ID</value>
+          </Fields>
+          <ForeignKeyFillMethod>Unique</ForeignKeyFillMethod>
+          <MaxBuckets>1000</MaxBuckets>
+          <Seed>0</Seed>
+          <MinRepeats>1</MinRepeats>
+          <MaxRepeats>10</MaxRepeats>
+          <NullsAllowed>False</NullsAllowed>
+          <NullProportion>0.01</NullProportion>
+        </value>
+        <value version="2" type="ForeignKeyProperty">
+          <Fields type="List&lt;string&gt;" version="1">
+            <value type="string">Exam_ID</value>
+          </Fields>
+          <ForeignKeyFillMethod>Unique</ForeignKeyFillMethod>
+          <MaxBuckets>1000</MaxBuckets>
+          <Seed>0</Seed>
+          <MinRepeats>1</MinRepeats>
+          <MaxRepeats>10</MaxRepeats>
+          <NullsAllowed>False</NullsAllowed>
+          <NullProportion>0.01</NullProportion>
+        </value>
+      </ForeignKeyProperties>
+    </value>
+    <value version="3" type="SDGTable">
+      <TableType>Generated</TableType>
+      <PopulationDetails version="2" type="PopulationDetails">
+        <PopulationType>RowCount</PopulationType>
+        <RowCount>1000</RowCount>
+        <ProportionTableExists>False</ProportionTableExists>
+        <Proportion>0</Proportion>
+        <TimeToPopulate>0</TimeToPopulate>
+      </PopulationDetails>
+      <InvalidRowBehaviour>SkipRow</InvalidRowBehaviour>
+      <Included>True</Included>
+      <Append>False</Append>
+      <Name>ProviderInfo</Name>
+      <Schema>dbo</Schema>
+      <IsTemporal>False</IsTemporal>
+      <IdentityInsert>True</IdentityInsert>
+      <Fields type="List&lt;SDGField&gt;" version="1">
+        <value version="1" type="SDGField">
+          <Name>Provider_ID</Name>
+          <FieldType>Generated</FieldType>
+          <PrimaryKey>True</PrimaryKey>
+          <ForeignKey>False</ForeignKey>
+          <Unique>True</Unique>
+          <AllowsNulls>False</AllowsNulls>
+          <SqlType>Integer32</SqlType>
+          <Precision>10</Precision>
+          <Scale>0</Scale>
+          <DefinedSize>4</DefinedSize>
+          <Generator version="1" type="GeneratorDetails">
+            <GeneratorTypeName>RedGate.SQLDataGenerator.Generators.Number.Int32Generator</GeneratorTypeName>
+            <DisplayName>IDs</DisplayName>
+            <Description>1,2,3,4,5,6....</Description>
+            <CategoryName>Business</CategoryName>
+            <GeneratorProperties type="Dictionary&lt;string, object&gt;" version="1">
+              <element>
+                <key type="string">Increment</key>
+                <value type="string">1</value>
+              </element>
+              <element>
+                <key type="string">UseSequence</key>
+                <value type="string">True</value>
+              </element>
+              <element>
+                <key type="string">Unique</key>
+                <value type="string">True</value>
+              </element>
+              <element>
+                <key type="string">MinValue</key>
+                <value type="string">1</value>
+              </element>
+              <element>
+                <key type="string">MaxValue</key>
+                <value type="string">2147483647</value>
+              </element>
+              <element>
+                <key type="string">UseColumnOffset</key>
+                <value type="string">False</value>
+              </element>
+              <element>
+                <key type="string">NullsAllowed</key>
+                <value type="string">False</value>
+              </element>
+              <element>
+                <key type="string">NullProportion</key>
+                <value type="string">0.01</value>
+              </element>
+              <element>
+                <key type="string">Seed</key>
+                <value type="string">5120</value>
+              </element>
+            </GeneratorProperties>
+          </Generator>
+        </value>
+        <value version="1" type="SDGField">
+          <Name>Provider_name</Name>
+          <FieldType>Generated</FieldType>
+          <PrimaryKey>False</PrimaryKey>
+          <ForeignKey>False</ForeignKey>
+          <Unique>False</Unique>
+          <AllowsNulls>False</AllowsNulls>
+          <SqlType>Varchar</SqlType>
+          <Precision>0</Precision>
+          <Scale>0</Scale>
+          <DefinedSize>80</DefinedSize>
+          <Generator version="1" type="GeneratorDetails">
+            <GeneratorTypeName>RedGate.SQLDataGenerator.ExpressionGenerators.Regexp.RegexpGenerator</GeneratorTypeName>
+            <DisplayName>5 Digit IDs</DisplayName>
+            <Description>67815,98234, 71333, 89620, 04231...</Description>
+            <CategoryName>Business</CategoryName>
+            <GeneratorProperties type="Dictionary&lt;string, object&gt;" version="1">
+              <element>
+                <key type="string">Expression</key>
+                <value type="string">($"Provider_name.txt")</value>
+              </element>
+              <element>
+                <key type="string">UseSequence</key>
+                <value type="string">False</value>
+              </element>
+              <element>
+                <key type="string">NullsAllowed</key>
+                <value type="string">False</value>
+              </element>
+              <element>
+                <key type="string">NullProportion</key>
+                <value type="string">0.01</value>
+              </element>
+              <element>
+                <key type="string">Seed</key>
+                <value type="string">5121</value>
+              </element>
+              <element>
+                <key type="string">Unique</key>
+                <value type="string">False</value>
+              </element>
+            </GeneratorProperties>
+          </Generator>
+        </value>
+        <value version="1" type="SDGField">
+          <Name>Organisation</Name>
+          <FieldType>Generated</FieldType>
+          <PrimaryKey>False</PrimaryKey>
+          <ForeignKey>False</ForeignKey>
+          <Unique>False</Unique>
+          <AllowsNulls>False</AllowsNulls>
+          <SqlType>Varchar</SqlType>
+          <Precision>0</Precision>
+          <Scale>0</Scale>
+          <DefinedSize>80</DefinedSize>
+          <Generator version="1" type="GeneratorDetails">
+            <GeneratorTypeName>RedGate.SQLDataGenerator.ExpressionGenerators.Regexp.RegexpGenerator</GeneratorTypeName>
+            <DisplayName>UK National Insurance Number</DisplayName>
+            <Description>OP 31 21 24 C, FS 39 10 14 Z, TD 62 95 51 E...</Description>
+            <CategoryName>Personal</CategoryName>
+            <GeneratorProperties type="Dictionary&lt;string, object&gt;" version="1">
+              <element>
+                <key type="string">Expression</key>
+                <value type="string">($"Sector.txt")</value>
+              </element>
+              <element>
+                <key type="string">UseSequence</key>
+                <value type="string">False</value>
+              </element>
+              <element>
+                <key type="string">NullsAllowed</key>
+                <value type="string">False</value>
+              </element>
+              <element>
+                <key type="string">NullProportion</key>
+                <value type="string">0.01</value>
+              </element>
+              <element>
+                <key type="string">Seed</key>
+                <value type="string">5122</value>
+              </element>
+              <element>
+                <key type="string">Unique</key>
+                <value type="string">False</value>
+              </element>
+            </GeneratorProperties>
+          </Generator>
+        </value>
+      </Fields>
+      <ForeignKeyProperties type="List&lt;ForeignKeyProperty&gt;" version="1" />
+    </value>
+    <value version="3" type="SDGTable">
+      <TableType>Generated</TableType>
+      <PopulationDetails version="2" type="PopulationDetails">
+        <PopulationType>RowCount</PopulationType>
+        <RowCount>1000</RowCount>
+        <ProportionTableExists>False</ProportionTableExists>
+        <Proportion>0</Proportion>
+        <TimeToPopulate>0</TimeToPopulate>
+      </PopulationDetails>
+      <InvalidRowBehaviour>SkipRow</InvalidRowBehaviour>
+      <Included>True</Included>
+      <Append>False</Append>
+      <Name>ProviderInfo_Scholarship</Name>
+      <Schema>dbo</Schema>
+      <IsTemporal>False</IsTemporal>
+      <IdentityInsert>True</IdentityInsert>
+      <Fields type="List&lt;SDGField&gt;" version="1">
+        <value version="1" type="SDGField">
+          <Name>Provider_ID</Name>
+          <FieldType>Generated</FieldType>
+          <PrimaryKey>True</PrimaryKey>
+          <ForeignKey>True</ForeignKey>
+          <Unique>True</Unique>
+          <AllowsNulls>False</AllowsNulls>
+          <SqlType>Integer32</SqlType>
+          <Precision>10</Precision>
+          <Scale>0</Scale>
+          <DefinedSize>4</DefinedSize>
+          <Generator version="1" type="GeneratorDetails">
+            <GeneratorTypeName>RedGate.SQLDataGenerator.Generators.Others.FKInternalGenerator</GeneratorTypeName>
+            <DisplayName>Foreign Key (automatic)</DisplayName>
+            <Description>Reference Foreign Key $FK for column $FKField</Description>
+            <CategoryName>SQL Type</CategoryName>
+            <GeneratorProperties type="Dictionary&lt;string, object&gt;" version="1">
+              <element>
+                <key type="string">Unique</key>
+                <value type="string">True</value>
+              </element>
+            </GeneratorProperties>
+          </Generator>
+        </value>
+        <value version="1" type="SDGField">
+          <Name>Scholarship_ID</Name>
+          <FieldType>Generated</FieldType>
+          <PrimaryKey>True</PrimaryKey>
+          <ForeignKey>True</ForeignKey>
+          <Unique>True</Unique>
+          <AllowsNulls>False</AllowsNulls>
+          <SqlType>Integer32</SqlType>
+          <Precision>10</Precision>
+          <Scale>0</Scale>
+          <DefinedSize>4</DefinedSize>
+          <Generator version="1" type="GeneratorDetails">
+            <GeneratorTypeName>RedGate.SQLDataGenerator.Generators.Others.FKInternalGenerator</GeneratorTypeName>
+            <DisplayName>Foreign Key (automatic)</DisplayName>
+            <Description>Reference Foreign Key $FK for column $FKField</Description>
+            <CategoryName>SQL Type</CategoryName>
+            <GeneratorProperties type="Dictionary&lt;string, object&gt;" version="1">
+              <element>
+                <key type="string">Unique</key>
+                <value type="string">True</value>
+              </element>
+            </GeneratorProperties>
+          </Generator>
+        </value>
+        <value version="1" type="SDGField">
+          <Name>Description</Name>
+          <FieldType>Generated</FieldType>
+          <PrimaryKey>False</PrimaryKey>
+          <ForeignKey>False</ForeignKey>
+          <Unique>False</Unique>
+          <AllowsNulls>False</AllowsNulls>
+          <SqlType>Text</SqlType>
+          <Precision>0</Precision>
+          <Scale>0</Scale>
+          <DefinedSize>16</DefinedSize>
+          <Generator version="1" type="GeneratorDetails">
+            <GeneratorTypeName>RedGate.SQLDataGenerator.DescriptionGenerators.TextGenerator</GeneratorTypeName>
+            <DisplayName>Description</DisplayName>
+            <Description>Id eudis quo</Description>
+            <CategoryName>Shopping</CategoryName>
+            <GeneratorProperties type="Dictionary&lt;string, object&gt;" version="1">
+              <element>
+                <key type="string">InputText</key>
+                <value type="string">Id eudis quo linguens imaginator pars fecit.  Et quad estis vobis homo, si quad fecit, non apparens vantis. Sed quad ut novum vobis regit, et nomen novum eggredior.  Longam, e gravis et pladior venit.  Tam quo, et bono quorum glavans e funem.  Quad rarendum habitatio quoque plorum fecundio, et quis gravis delerium.  Versus esset in dolorum cognitio, travissimantor quantare sed quartu manifestum egreddior estum.  Multum gravum et plurissimum parte brevens, non quo plorum in volcans essit.  Pro linguens non trepicandor si nomen transit.</value>
+              </element>
+              <element>
+                <key type="string">MinLen</key>
+                <value type="string">16</value>
+              </element>
+              <element>
+                <key type="string">MaxLen</key>
+                <value type="string">16</value>
+              </element>
+              <element>
+                <key type="string">NullsAllowed</key>
+                <value type="string">False</value>
+              </element>
+              <element>
+                <key type="string">NullProportion</key>
+                <value type="string">0.01</value>
+              </element>
+              <element>
+                <key type="string">Seed</key>
+                <value type="string">6146</value>
+              </element>
+            </GeneratorProperties>
+          </Generator>
+        </value>
+      </Fields>
+      <ForeignKeyProperties type="List&lt;ForeignKeyProperty&gt;" version="1">
+        <value version="2" type="ForeignKeyProperty">
+          <Fields type="List&lt;string&gt;" version="1">
+            <value type="string">Scholarship_ID</value>
+          </Fields>
+          <ForeignKeyFillMethod>Unique</ForeignKeyFillMethod>
+          <MaxBuckets>1000</MaxBuckets>
+          <Seed>0</Seed>
+          <MinRepeats>1</MinRepeats>
+          <MaxRepeats>10</MaxRepeats>
+          <NullsAllowed>False</NullsAllowed>
+          <NullProportion>0.01</NullProportion>
+        </value>
+        <value version="2" type="ForeignKeyProperty">
+          <Fields type="List&lt;string&gt;" version="1">
+            <value type="string">Provider_ID</value>
+          </Fields>
+          <ForeignKeyFillMethod>Unique</ForeignKeyFillMethod>
+          <MaxBuckets>1000</MaxBuckets>
+          <Seed>0</Seed>
+          <MinRepeats>1</MinRepeats>
+          <MaxRepeats>10</MaxRepeats>
+          <NullsAllowed>False</NullsAllowed>
+          <NullProportion>0.01</NullProportion>
+        </value>
+      </ForeignKeyProperties>
+    </value>
+    <value version="3" type="SDGTable">
+      <TableType>Generated</TableType>
+      <PopulationDetails version="2" type="PopulationDetails">
+        <PopulationType>RowCount</PopulationType>
+        <RowCount>1000</RowCount>
+        <ProportionTableExists>False</ProportionTableExists>
+        <Proportion>0</Proportion>
+        <TimeToPopulate>0</TimeToPopulate>
+      </PopulationDetails>
+      <InvalidRowBehaviour>SkipRow</InvalidRowBehaviour>
+      <Included>True</Included>
+      <Append>False</Append>
+      <Name>Scholarship</Name>
+      <Schema>dbo</Schema>
+      <IsTemporal>False</IsTemporal>
+      <IdentityInsert>True</IdentityInsert>
+      <Fields type="List&lt;SDGField&gt;" version="1">
+        <value version="1" type="SDGField">
+          <Name>Scholarship_ID</Name>
+          <FieldType>Generated</FieldType>
+          <PrimaryKey>True</PrimaryKey>
+          <ForeignKey>False</ForeignKey>
+          <Unique>True</Unique>
+          <AllowsNulls>False</AllowsNulls>
+          <SqlType>Integer32</SqlType>
+          <Precision>10</Precision>
+          <Scale>0</Scale>
+          <DefinedSize>4</DefinedSize>
+          <Generator version="1" type="GeneratorDetails">
+            <GeneratorTypeName>RedGate.SQLDataGenerator.Generators.Number.Int32Generator</GeneratorTypeName>
+            <DisplayName>IDs</DisplayName>
+            <Description>1,2,3,4,5,6....</Description>
+            <CategoryName>Business</CategoryName>
+            <GeneratorProperties type="Dictionary&lt;string, object&gt;" version="1">
+              <element>
+                <key type="string">Increment</key>
+                <value type="string">1</value>
+              </element>
+              <element>
+                <key type="string">UseSequence</key>
+                <value type="string">True</value>
+              </element>
+              <element>
+                <key type="string">Unique</key>
+                <value type="string">True</value>
+              </element>
+              <element>
+                <key type="string">MinValue</key>
+                <value type="string">1000</value>
+              </element>
+              <element>
+                <key type="string">MaxValue</key>
+                <value type="string">4000</value>
+              </element>
+              <element>
+                <key type="string">UseColumnOffset</key>
+                <value type="string">False</value>
+              </element>
+              <element>
+                <key type="string">NullsAllowed</key>
+                <value type="string">False</value>
+              </element>
+              <element>
+                <key type="string">NullProportion</key>
+                <value type="string">0.01</value>
+              </element>
+              <element>
+                <key type="string">Seed</key>
+                <value type="string">7168</value>
+              </element>
+            </GeneratorProperties>
+          </Generator>
+        </value>
+        <value version="1" type="SDGField">
+          <Name>Scolarship_Percentage</Name>
+          <FieldType>Generated</FieldType>
+          <PrimaryKey>False</PrimaryKey>
+          <ForeignKey>False</ForeignKey>
+          <Unique>False</Unique>
+          <AllowsNulls>False</AllowsNulls>
+          <SqlType>Integer32</SqlType>
+          <Precision>10</Precision>
+          <Scale>0</Scale>
+          <DefinedSize>4</DefinedSize>
+          <Generator version="1" type="GeneratorDetails">
+            <GeneratorTypeName>RedGate.SQLDataGenerator.Generators.Number.Int32Generator</GeneratorTypeName>
+            <DisplayName>Working Age</DisplayName>
+            <Description>29, 65, 35, 18 ...</Description>
+            <CategoryName>Personal</CategoryName>
+            <GeneratorProperties type="Dictionary&lt;string, object&gt;" version="1">
+              <element>
+                <key type="string">Increment</key>
+                <value type="string">1</value>
+              </element>
+              <element>
+                <key type="string">UseSequence</key>
+                <value type="string">False</value>
+              </element>
+              <element>
+                <key type="string">Unique</key>
+                <value type="string">False</value>
+              </element>
+              <element>
+                <key type="string">MinValue</key>
+                <value type="string">18</value>
+              </element>
+              <element>
+                <key type="string">MaxValue</key>
+                <value type="string">65</value>
+              </element>
+              <element>
+                <key type="string">UseColumnOffset</key>
+                <value type="string">False</value>
+              </element>
+              <element>
+                <key type="string">NullsAllowed</key>
+                <value type="string">False</value>
+              </element>
+              <element>
+                <key type="string">NullProportion</key>
+                <value type="string">0.01</value>
+              </element>
+              <element>
+                <key type="string">Seed</key>
+                <value type="string">7169</value>
+              </element>
+            </GeneratorProperties>
+          </Generator>
+        </value>
+        <value version="1" type="SDGField">
+          <Name>Condition</Name>
+          <FieldType>Generated</FieldType>
+          <PrimaryKey>False</PrimaryKey>
+          <ForeignKey>False</ForeignKey>
+          <Unique>False</Unique>
+          <AllowsNulls>False</AllowsNulls>
+          <SqlType>Varchar</SqlType>
+          <Precision>0</Precision>
+          <Scale>0</Scale>
+          <DefinedSize>50</DefinedSize>
+          <Generator version="1" type="GeneratorDetails">
+            <GeneratorTypeName>RedGate.SQLDataGenerator.ExpressionGenerators.Regexp.RegexpGenerator</GeneratorTypeName>
+            <DisplayName>Regex Generator</DisplayName>
+            <Description>Generates data from a Regular Expression</Description>
+            <CategoryName>Generic</CategoryName>
+            <GeneratorProperties type="Dictionary&lt;string, object&gt;" version="1">
+              <element>
+                <key type="string">Expression</key>
+                <value type="string">($"MaintainCondition.txt")</value>
+              </element>
+              <element>
+                <key type="string">UseSequence</key>
+                <value type="string">False</value>
+              </element>
+              <element>
+                <key type="string">NullsAllowed</key>
+                <value type="string">False</value>
+              </element>
+              <element>
+                <key type="string">NullProportion</key>
+                <value type="string">0.01</value>
+              </element>
+              <element>
+                <key type="string">Seed</key>
+                <value type="string">7170</value>
+              </element>
+              <element>
+                <key type="string">Unique</key>
+                <value type="string">False</value>
+              </element>
+            </GeneratorProperties>
+          </Generator>
+        </value>
+        <value version="1" type="SDGField">
+          <Name>Start_year</Name>
+          <FieldType>Generated</FieldType>
+          <PrimaryKey>False</PrimaryKey>
+          <ForeignKey>False</ForeignKey>
+          <Unique>False</Unique>
+          <AllowsNulls>False</AllowsNulls>
+          <SqlType>Integer32</SqlType>
+          <Precision>10</Precision>
+          <Scale>0</Scale>
+          <DefinedSize>4</DefinedSize>
+          <Generator version="1" type="GeneratorDetails">
+            <GeneratorTypeName>RedGate.SQLDataGenerator.Generators.Number.Int32Generator</GeneratorTypeName>
+            <DisplayName>int</DisplayName>
+            <Description>Generates int (32-bit) values</Description>
+            <CategoryName>SQL Type</CategoryName>
+            <GeneratorProperties type="Dictionary&lt;string, object&gt;" version="1">
+              <element>
+                <key type="string">Increment</key>
+                <value type="string">1</value>
+              </element>
+              <element>
+                <key type="string">UseSequence</key>
+                <value type="string">False</value>
+              </element>
+              <element>
+                <key type="string">Unique</key>
+                <value type="string">False</value>
+              </element>
+              <element>
+                <key type="string">MinValue</key>
+                <value type="string">2007</value>
+              </element>
+              <element>
+                <key type="string">MaxValue</key>
+                <value type="string">2013</value>
+              </element>
+              <element>
+                <key type="string">UseColumnOffset</key>
+                <value type="string">False</value>
+              </element>
+              <element>
+                <key type="string">NullsAllowed</key>
+                <value type="string">False</value>
+              </element>
+              <element>
+                <key type="string">NullProportion</key>
+                <value type="string">0.01</value>
+              </element>
+              <element>
+                <key type="string">Seed</key>
+                <value type="string">7171</value>
+              </element>
+            </GeneratorProperties>
+          </Generator>
+        </value>
+        <value version="1" type="SDGField">
+          <Name>Finish_year</Name>
+          <FieldType>Generated</FieldType>
+          <PrimaryKey>False</PrimaryKey>
+          <ForeignKey>False</ForeignKey>
+          <Unique>False</Unique>
+          <AllowsNulls>False</AllowsNulls>
+          <SqlType>Integer32</SqlType>
+          <Precision>10</Precision>
+          <Scale>0</Scale>
+          <DefinedSize>4</DefinedSize>
+          <Generator version="1" type="GeneratorDetails">
+            <GeneratorTypeName>RedGate.SQLDataGenerator.Generators.Number.Int32Generator</GeneratorTypeName>
+            <DisplayName>int</DisplayName>
+            <Description>Generates int (32-bit) values</Description>
+            <CategoryName>SQL Type</CategoryName>
+            <GeneratorProperties type="Dictionary&lt;string, object&gt;" version="1">
+              <element>
+                <key type="string">Increment</key>
+                <value type="string">1</value>
+              </element>
+              <element>
+                <key type="string">UseSequence</key>
+                <value type="string">False</value>
+              </element>
+              <element>
+                <key type="string">Unique</key>
+                <value type="string">False</value>
+              </element>
+              <element>
+                <key type="string">MinValue</key>
+                <value type="string">2012</value>
+              </element>
+              <element>
+                <key type="string">MaxValue</key>
+                <value type="string">2015</value>
+              </element>
+              <element>
+                <key type="string">UseColumnOffset</key>
+                <value type="string">False</value>
+              </element>
+              <element>
+                <key type="string">NullsAllowed</key>
+                <value type="string">False</value>
+              </element>
+              <element>
+                <key type="string">NullProportion</key>
+                <value type="string">0.01</value>
+              </element>
+              <element>
+                <key type="string">Seed</key>
+                <value type="string">7172</value>
+              </element>
+            </GeneratorProperties>
+          </Generator>
+        </value>
+        <value version="1" type="SDGField">
+          <Name>Enrolment_ID</Name>
+          <FieldType>Generated</FieldType>
+          <PrimaryKey>False</PrimaryKey>
+          <ForeignKey>True</ForeignKey>
+          <Unique>False</Unique>
+          <AllowsNulls>False</AllowsNulls>
+          <SqlType>Integer32</SqlType>
+          <Precision>10</Precision>
+          <Scale>0</Scale>
+          <DefinedSize>4</DefinedSize>
+          <Generator version="1" type="GeneratorDetails">
+            <GeneratorTypeName>RedGate.SQLDataGenerator.Generators.Others.FKInternalGenerator</GeneratorTypeName>
+            <DisplayName>Foreign Key (automatic)</DisplayName>
+            <Description>Reference Foreign Key $FK for column $FKField</Description>
+            <CategoryName>SQL Type</CategoryName>
+            <GeneratorProperties type="Dictionary&lt;string, object&gt;" version="1">
+              <element>
+                <key type="string">Unique</key>
+                <value type="string">False</value>
+              </element>
+            </GeneratorProperties>
+          </Generator>
+        </value>
+      </Fields>
+      <ForeignKeyProperties type="List&lt;ForeignKeyProperty&gt;" version="1">
+        <value version="2" type="ForeignKeyProperty">
+          <Fields type="List&lt;string&gt;" version="1">
+            <value type="string">Enrolment_ID</value>
+          </Fields>
+          <ForeignKeyFillMethod>RepeatForever</ForeignKeyFillMethod>
+          <MaxBuckets>1000</MaxBuckets>
+          <Seed>0</Seed>
+          <MinRepeats>1</MinRepeats>
+          <MaxRepeats>10</MaxRepeats>
+          <NullsAllowed>False</NullsAllowed>
+          <NullProportion>0.01</NullProportion>
+        </value>
+      </ForeignKeyProperties>
+    </value>
+    <value version="3" type="SDGTable">
+      <TableType>Generated</TableType>
+      <PopulationDetails version="2" type="PopulationDetails">
+        <PopulationType>RowCount</PopulationType>
+        <RowCount>1000</RowCount>
+        <ProportionTableExists>False</ProportionTableExists>
+        <Proportion>0</Proportion>
+        <TimeToPopulate>0</TimeToPopulate>
+      </PopulationDetails>
+      <InvalidRowBehaviour>SkipRow</InvalidRowBehaviour>
+      <Included>True</Included>
+      <Append>False</Append>
+      <Name>Student</Name>
+      <Schema>dbo</Schema>
+      <IsTemporal>False</IsTemporal>
+      <IdentityInsert>True</IdentityInsert>
+      <Fields type="List&lt;SDGField&gt;" version="1">
+        <value version="1" type="SDGField">
+          <Name>student_ID</Name>
+          <FieldType>Generated</FieldType>
+          <PrimaryKey>True</PrimaryKey>
+          <ForeignKey>False</ForeignKey>
+          <Unique>True</Unique>
+          <AllowsNulls>False</AllowsNulls>
+          <SqlType>Integer32</SqlType>
+          <Precision>10</Precision>
+          <Scale>0</Scale>
+          <DefinedSize>4</DefinedSize>
+          <Generator version="1" type="GeneratorDetails">
+            <GeneratorTypeName>RedGate.SQLDataGenerator.Generators.Number.Int32Generator</GeneratorTypeName>
+            <DisplayName>IDs</DisplayName>
+            <Description>1,2,3,4,5,6....</Description>
+            <CategoryName>Business</CategoryName>
+            <GeneratorProperties type="Dictionary&lt;string, object&gt;" version="1">
+              <element>
+                <key type="string">Increment</key>
+                <value type="string">1</value>
+              </element>
+              <element>
+                <key type="string">UseSequence</key>
+                <value type="string">False</value>
+              </element>
+              <element>
+                <key type="string">Unique</key>
+                <value type="string">True</value>
+              </element>
+              <element>
+                <key type="string">MinValue</key>
+                <value type="string">1020000</value>
+              </element>
+              <element>
+                <key type="string">MaxValue</key>
+                <value type="string">1025000</value>
+              </element>
+              <element>
+                <key type="string">UseColumnOffset</key>
+                <value type="string">False</value>
+              </element>
+              <element>
+                <key type="string">NullsAllowed</key>
+                <value type="string">False</value>
+              </element>
+              <element>
+                <key type="string">NullProportion</key>
+                <value type="string">0.01</value>
+              </element>
+              <element>
+                <key type="string">Seed</key>
+                <value type="string">8192</value>
+              </element>
+            </GeneratorProperties>
+          </Generator>
+        </value>
+        <value version="1" type="SDGField">
+          <Name>FirstName</Name>
+          <FieldType>Generated</FieldType>
+          <PrimaryKey>False</PrimaryKey>
+          <ForeignKey>False</ForeignKey>
+          <Unique>False</Unique>
+          <AllowsNulls>False</AllowsNulls>
+          <SqlType>Varchar</SqlType>
+          <Precision>0</Precision>
+          <Scale>0</Scale>
+          <DefinedSize>30</DefinedSize>
+          <Generator version="1" type="GeneratorDetails">
+            <GeneratorTypeName>RedGate.SQLDataGenerator.ExpressionGenerators.FileListGenerator</GeneratorTypeName>
+            <DisplayName>First Name</DisplayName>
+            <Description>Emma, Lionel, Charlotte, David, Marianne...</Description>
+            <CategoryName>Personal</CategoryName>
+            <GeneratorProperties type="Dictionary&lt;string, object&gt;" version="1">
+              <element>
+                <key type="string">FileName</key>
+                <value type="string">NamesFirst.txt</value>
+              </element>
+              <element>
+                <key type="string">Unique</key>
+                <value type="string">False</value>
+              </element>
+              <element>
+                <key type="string">NullsAllowed</key>
+                <value type="string">False</value>
+              </element>
+              <element>
+                <key type="string">NullProportion</key>
+                <value type="string">0.01</value>
+              </element>
+              <element>
+                <key type="string">Seed</key>
+                <value type="string">8193</value>
+              </element>
+            </GeneratorProperties>
+          </Generator>
+        </value>
+        <value version="1" type="SDGField">
+          <Name>FamilyName</Name>
+          <FieldType>Generated</FieldType>
+          <PrimaryKey>False</PrimaryKey>
+          <ForeignKey>False</ForeignKey>
+          <Unique>False</Unique>
+          <AllowsNulls>False</AllowsNulls>
+          <SqlType>Varchar</SqlType>
+          <Precision>0</Precision>
+          <Scale>0</Scale>
+          <DefinedSize>30</DefinedSize>
+          <Generator version="1" type="GeneratorDetails">
+            <GeneratorTypeName>RedGate.SQLDataGenerator.ExpressionGenerators.Regexp.RegexpGenerator</GeneratorTypeName>
+            <DisplayName>Nick Name</DisplayName>
+            <Description>Mike124, Chris1, Tom78, Jenny39, Amy12, Mel54...</Description>
+            <CategoryName>Personal</CategoryName>
+            <GeneratorProperties type="Dictionary&lt;string, object&gt;" version="1">
+              <element>
+                <key type="string">Expression</key>
+                <value type="string">($"NamesLast.txt")</value>
+              </element>
+              <element>
+                <key type="string">UseSequence</key>
+                <value type="string">False</value>
+              </element>
+              <element>
+                <key type="string">NullsAllowed</key>
+                <value type="string">False</value>
+              </element>
+              <element>
+                <key type="string">NullProportion</key>
+                <value type="string">0.01</value>
+              </element>
+              <element>
+                <key type="string">Seed</key>
+                <value type="string">8194</value>
+              </element>
+              <element>
+                <key type="string">Unique</key>
+                <value type="string">False</value>
+              </element>
+            </GeneratorProperties>
+          </Generator>
+        </value>
+        <value version="1" type="SDGField">
+          <Name>Gender</Name>
+          <FieldType>Generated</FieldType>
+          <PrimaryKey>False</PrimaryKey>
+          <ForeignKey>False</ForeignKey>
+          <Unique>False</Unique>
+          <AllowsNulls>False</AllowsNulls>
+          <SqlType>Char</SqlType>
+          <Precision>0</Precision>
+          <Scale>0</Scale>
+          <DefinedSize>30</DefinedSize>
+          <Generator version="1" type="GeneratorDetails">
+            <GeneratorTypeName>RedGate.SQLDataGenerator.ExpressionGenerators.Regexp.RegexpGenerator</GeneratorTypeName>
+            <DisplayName>Regex Generator</DisplayName>
+            <Description>Generates data from a Regular Expression</Description>
+            <CategoryName>Generic</CategoryName>
+            <GeneratorProperties type="Dictionary&lt;string, object&gt;" version="1">
+              <element>
+                <key type="string">Expression</key>
+                <value type="string">($"genders.txt")</value>
+              </element>
+              <element>
+                <key type="string">UseSequence</key>
+                <value type="string">False</value>
+              </element>
+              <element>
+                <key type="string">NullsAllowed</key>
+                <value type="string">False</value>
+              </element>
+              <element>
+                <key type="string">NullProportion</key>
+                <value type="string">0.01</value>
+              </element>
+              <element>
+                <key type="string">Seed</key>
+                <value type="string">8195</value>
+              </element>
+              <element>
+                <key type="string">Unique</key>
+                <value type="string">False</value>
+              </element>
+            </GeneratorProperties>
+          </Generator>
+        </value>
+        <value version="1" type="SDGField">
+          <Name>Date_OF_Birth</Name>
+          <FieldType>Generated</FieldType>
+          <PrimaryKey>False</PrimaryKey>
+          <ForeignKey>False</ForeignKey>
+          <Unique>False</Unique>
+          <AllowsNulls>False</AllowsNulls>
+          <SqlType>Varchar</SqlType>
+          <Precision>0</Precision>
+          <Scale>0</Scale>
+          <DefinedSize>20</DefinedSize>
+          <Generator version="1" type="GeneratorDetails">
+            <GeneratorTypeName>RedGate.SQLDataGenerator.ExpressionGenerators.Regexp.RegexpGenerator</GeneratorTypeName>
+            <DisplayName>Regex Generator</DisplayName>
+            <Description>Generates data from a Regular Expression</Description>
+            <CategoryName>Generic</CategoryName>
+            <GeneratorProperties type="Dictionary&lt;string, object&gt;" version="1">
+              <element>
+                <key type="string">Expression</key>
+                <value type="string">(0[1-9]|1[012])/(0[1-9]|[12][0-9]|3[01])/(19|20)[2-8]{2}</value>
+              </element>
+              <element>
+                <key type="string">UseSequence</key>
+                <value type="string">False</value>
+              </element>
+              <element>
+                <key type="string">NullsAllowed</key>
+                <value type="string">False</value>
+              </element>
+              <element>
+                <key type="string">NullProportion</key>
+                <value type="string">0.01</value>
+              </element>
+              <element>
+                <key type="string">Seed</key>
+                <value type="string">8196</value>
+              </element>
+              <element>
+                <key type="string">Unique</key>
+                <value type="string">False</value>
+              </element>
+            </GeneratorProperties>
+          </Generator>
+        </value>
+        <value version="1" type="SDGField">
+          <Name>Phon_No</Name>
+          <FieldType>Generated</FieldType>
+          <PrimaryKey>False</PrimaryKey>
+          <ForeignKey>False</ForeignKey>
+          <Unique>False</Unique>
+          <AllowsNulls>False</AllowsNulls>
+          <SqlType>Integer32</SqlType>
+          <Precision>10</Precision>
+          <Scale>0</Scale>
+          <DefinedSize>4</DefinedSize>
+          <Generator version="1" type="GeneratorDetails">
+            <GeneratorTypeName>RedGate.SQLDataGenerator.Generators.Number.Int32Generator</GeneratorTypeName>
+            <DisplayName>int</DisplayName>
+            <Description>Generates int (32-bit) values</Description>
+            <CategoryName>SQL Type</CategoryName>
+            <GeneratorProperties type="Dictionary&lt;string, object&gt;" version="1">
+              <element>
+                <key type="string">Increment</key>
+                <value type="string">1</value>
+              </element>
+              <element>
+                <key type="string">UseSequence</key>
+                <value type="string">False</value>
+              </element>
+              <element>
+                <key type="string">Unique</key>
+                <value type="string">False</value>
+              </element>
+              <element>
+                <key type="string">MinValue</key>
+                <value type="string">450000000</value>
+              </element>
+              <element>
+                <key type="string">MaxValue</key>
+                <value type="string">490000000</value>
+              </element>
+              <element>
+                <key type="string">UseColumnOffset</key>
+                <value type="string">False</value>
+              </element>
+              <element>
+                <key type="string">NullsAllowed</key>
+                <value type="string">False</value>
+              </element>
+              <element>
+                <key type="string">NullProportion</key>
+                <value type="string">0.01</value>
+              </element>
+              <element>
+                <key type="string">Seed</key>
+                <value type="string">8197</value>
+              </element>
+            </GeneratorProperties>
+          </Generator>
+        </value>
+      </Fields>
+      <ForeignKeyProperties type="List&lt;ForeignKeyProperty&gt;" version="1" />
+    </value>
+    <value version="3" type="SDGTable">
+      <TableType>Generated</TableType>
+      <PopulationDetails version="2" type="PopulationDetails">
+        <PopulationType>RowCount</PopulationType>
+        <RowCount>1000</RowCount>
+        <ProportionTableExists>False</ProportionTableExists>
+        <Proportion>0</Proportion>
+        <TimeToPopulate>0</TimeToPopulate>
+      </PopulationDetails>
+      <InvalidRowBehaviour>SkipRow</InvalidRowBehaviour>
+      <Included>True</Included>
+      <Append>False</Append>
+      <Name>Subject</Name>
+      <Schema>dbo</Schema>
+      <IsTemporal>False</IsTemporal>
+      <IdentityInsert>True</IdentityInsert>
+      <Fields type="List&lt;SDGField&gt;" version="1">
+        <value version="1" type="SDGField">
+          <Name>Subject_ID</Name>
+          <FieldType>Generated</FieldType>
+          <PrimaryKey>True</PrimaryKey>
+          <ForeignKey>False</ForeignKey>
+          <Unique>True</Unique>
+          <AllowsNulls>False</AllowsNulls>
+          <SqlType>Integer32</SqlType>
+          <Precision>10</Precision>
+          <Scale>0</Scale>
+          <DefinedSize>4</DefinedSize>
+          <Generator version="1" type="GeneratorDetails">
+            <GeneratorTypeName>RedGate.SQLDataGenerator.Generators.Number.Int32Generator</GeneratorTypeName>
+            <DisplayName>IDs</DisplayName>
+            <Description>1,2,3,4,5,6....</Description>
+            <CategoryName>Business</CategoryName>
+            <GeneratorProperties type="Dictionary&lt;string, object&gt;" version="1">
+              <element>
+                <key type="string">Increment</key>
+                <value type="string">1</value>
+              </element>
+              <element>
+                <key type="string">UseSequence</key>
+                <value type="string">False</value>
+              </element>
+              <element>
+                <key type="string">Unique</key>
+                <value type="string">True</value>
+              </element>
+              <element>
+                <key type="string">MinValue</key>
+                <value type="string">1</value>
+              </element>
+              <element>
+                <key type="string">MaxValue</key>
+                <value type="string">2000</value>
+              </element>
+              <element>
+                <key type="string">UseColumnOffset</key>
+                <value type="string">False</value>
+              </element>
+              <element>
+                <key type="string">NullsAllowed</key>
+                <value type="string">False</value>
+              </element>
+              <element>
+                <key type="string">NullProportion</key>
+                <value type="string">0.01</value>
+              </element>
+              <element>
+                <key type="string">Seed</key>
+                <value type="string">9216</value>
+              </element>
+            </GeneratorProperties>
+          </Generator>
+        </value>
+        <value version="1" type="SDGField">
+          <Name>Division</Name>
+          <FieldType>Generated</FieldType>
+          <PrimaryKey>False</PrimaryKey>
+          <ForeignKey>False</ForeignKey>
+          <Unique>False</Unique>
+          <AllowsNulls>False</AllowsNulls>
+          <SqlType>Varchar</SqlType>
+          <Precision>0</Precision>
+          <Scale>0</Scale>
+          <DefinedSize>70</DefinedSize>
+          <Generator version="1" type="GeneratorDetails">
+            <GeneratorTypeName>RedGate.SQLDataGenerator.ExpressionGenerators.Regexp.RegexpGenerator</GeneratorTypeName>
+            <DisplayName>Regex Generator</DisplayName>
+            <Description>Generates data from a Regular Expression</Description>
+            <CategoryName>Generic</CategoryName>
+            <GeneratorProperties type="Dictionary&lt;string, object&gt;" version="1">
+              <element>
+                <key type="string">Expression</key>
+                <value type="string">($"division.txt")</value>
+              </element>
+              <element>
+                <key type="string">UseSequence</key>
+                <value type="string">False</value>
+              </element>
+              <element>
+                <key type="string">NullsAllowed</key>
+                <value type="string">False</value>
+              </element>
+              <element>
+                <key type="string">NullProportion</key>
+                <value type="string">0.01</value>
+              </element>
+              <element>
+                <key type="string">Seed</key>
+                <value type="string">9800</value>
+              </element>
+              <element>
+                <key type="string">Unique</key>
+                <value type="string">False</value>
+              </element>
+            </GeneratorProperties>
+          </Generator>
+        </value>
+      </Fields>
+      <ForeignKeyProperties type="List&lt;ForeignKeyProperty&gt;" version="1" />
+    </value>
+    <value version="3" type="SDGTable">
+      <TableType>Generated</TableType>
+      <PopulationDetails version="2" type="PopulationDetails">
+        <PopulationType>RowCount</PopulationType>
+        <RowCount>1000</RowCount>
+        <ProportionTableExists>False</ProportionTableExists>
+        <Proportion>0</Proportion>
+        <TimeToPopulate>0</TimeToPopulate>
+      </PopulationDetails>
+      <InvalidRowBehaviour>SkipRow</InvalidRowBehaviour>
+      <Included>True</Included>
+      <Append>False</Append>
+      <Name>Subject_Course</Name>
+      <Schema>dbo</Schema>
+      <IsTemporal>False</IsTemporal>
+      <IdentityInsert>True</IdentityInsert>
+      <Fields type="List&lt;SDGField&gt;" version="1">
+        <value version="1" type="SDGField">
+          <Name>Course_ID</Name>
+          <FieldType>Generated</FieldType>
+          <PrimaryKey>True</PrimaryKey>
+          <ForeignKey>True</ForeignKey>
+          <Unique>True</Unique>
+          <AllowsNulls>False</AllowsNulls>
+          <SqlType>Integer32</SqlType>
+          <Precision>10</Precision>
+          <Scale>0</Scale>
+          <DefinedSize>4</DefinedSize>
+          <Generator version="1" type="GeneratorDetails">
+            <GeneratorTypeName>RedGate.SQLDataGenerator.Generators.Others.FKInternalGenerator</GeneratorTypeName>
+            <DisplayName>Foreign Key (automatic)</DisplayName>
+            <Description>Reference Foreign Key $FK for column $FKField</Description>
+            <CategoryName>SQL Type</CategoryName>
+            <GeneratorProperties type="Dictionary&lt;string, object&gt;" version="1">
+              <element>
+                <key type="string">Unique</key>
+                <value type="string">True</value>
+              </element>
+            </GeneratorProperties>
+          </Generator>
+        </value>
+        <value version="1" type="SDGField">
+          <Name>Subject_ID</Name>
+          <FieldType>Generated</FieldType>
+          <PrimaryKey>True</PrimaryKey>
+          <ForeignKey>True</ForeignKey>
+          <Unique>True</Unique>
+          <AllowsNulls>False</AllowsNulls>
+          <SqlType>Integer32</SqlType>
+          <Precision>10</Precision>
+          <Scale>0</Scale>
+          <DefinedSize>4</DefinedSize>
+          <Generator version="1" type="GeneratorDetails">
+            <GeneratorTypeName>RedGate.SQLDataGenerator.Generators.Others.FKInternalGenerator</GeneratorTypeName>
+            <DisplayName>Foreign Key (automatic)</DisplayName>
+            <Description>Reference Foreign Key $FK for column $FKField</Description>
+            <CategoryName>SQL Type</CategoryName>
+            <GeneratorProperties type="Dictionary&lt;string, object&gt;" version="1">
+              <element>
+                <key type="string">Unique</key>
+                <value type="string">True</value>
+              </element>
+            </GeneratorProperties>
+          </Generator>
+        </value>
+      </Fields>
+      <ForeignKeyProperties type="List&lt;ForeignKeyProperty&gt;" version="1">
+        <value version="2" type="ForeignKeyProperty">
+          <Fields type="List&lt;string&gt;" version="1">
+            <value type="string">Subject_ID</value>
+          </Fields>
+          <ForeignKeyFillMethod>Unique</ForeignKeyFillMethod>
+          <MaxBuckets>1000</MaxBuckets>
+          <Seed>0</Seed>
+          <MinRepeats>1</MinRepeats>
+          <MaxRepeats>10</MaxRepeats>
+          <NullsAllowed>False</NullsAllowed>
+          <NullProportion>0.01</NullProportion>
+        </value>
+        <value version="2" type="ForeignKeyProperty">
+          <Fields type="List&lt;string&gt;" version="1">
+            <value type="string">Course_ID</value>
+          </Fields>
+          <ForeignKeyFillMethod>Unique</ForeignKeyFillMethod>
+          <MaxBuckets>1000</MaxBuckets>
+          <Seed>0</Seed>
+          <MinRepeats>1</MinRepeats>
+          <MaxRepeats>10</MaxRepeats>
+          <NullsAllowed>False</NullsAllowed>
+          <NullProportion>0.01</NullProportion>
+        </value>
+      </ForeignKeyProperties>
+    </value>
+  </Tables>
+  <ProjectOptions version="2" type="ProjectOptions">
+    <BatchSize>1000</BatchSize>
+    <FireInsertTriggers>True</FireInsertTriggers>
+    <FireDeleteTriggers>False</FireDeleteTriggers>
+    <CheckConstraints>True</CheckConstraints>
+    <ShuffleBlockSize>1000</ShuffleBlockSize>
+    <AutoGeneratePreviews>True</AutoGeneratePreviews>
+  </ProjectOptions>
+  <PreScripts type="SQLScripts" version="1" />
+  <PostScripts type="SQLScripts" version="1" />
+  <IsRefresh>False</IsRefresh>
+</Project>
